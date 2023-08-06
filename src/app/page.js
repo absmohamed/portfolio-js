@@ -10,7 +10,7 @@ import qut from "./../../public/qutLogo.jpg";
 import { useState } from "react";
 
 export default function Home() {
-  const skipPlugin= process.env.NETLIFY_NEXT_PLUGIN_SKIP;
+  // const skipPlugin= process.env.NETLIFY_NEXT_PLUGIN_SKIP;
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? 'dark' : ""}>
