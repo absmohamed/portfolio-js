@@ -10,6 +10,7 @@ import qut from "./../../public/qutLogo.jpg";
 import { useState } from "react";
 
 export default function Home() {
+  const skipPlugin= process.env.NETLIFY_NEXT_PLUGIN_SKIP;
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? 'dark' : ""}>
@@ -28,7 +29,7 @@ export default function Home() {
             <li>
             <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl text-black" />
             </li>
-            <li><a className="bg-gradient-to-r from-cyan-600 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href='#'>Resume</a></li>
+            <li><a className="bg-gradient-to-r from-cyan-600 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
             </ul>
           </nav>
           <div className="text-center p-10">
